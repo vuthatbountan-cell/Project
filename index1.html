@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile & Projects</title>
+<link rel="stylesheet" href="u.css">
+</head>
+
+<body>
+<nav>
+
+    <div class="logo">
+        My Website
+    </div>
+
+    <ul>
+        <li>
+            <button class="nav-btn active" onclick="showPage('home', this)">
+                Home
+            </button>
+        </li>
+
+        <li>
+            <button class="nav-btn" onclick="showPage('lessons', this)">
+                Lessons
+            </button>
+        </li>
+
+        <li>
+            <button class="nav-btn" onclick="showPage('projects', this)">
+                Project
+            </button>
+        </li>
+
+        <li>
+            <button class="nav-btn" onclick="showPage('contact', this)">
+                Contact
+            </button>
+        </li>
+    </ul>
+
+</nav>
+
+<section id="home" class="page active">
+
+    <div class="profile">
+
+        <img src="img/v.JPG" alt="">
+        <div class="profile-info">
+
+            <h1>Vuthat Bounthan</h1>
+
+            <h3>Web Developer Student</h3>
+
+            <p>
+                សួស្តី! ខ្ញុំជានិស្សិតដែលកំពុងសិក្សាផ្នែក
+                Computer Science និង Web Development។
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="lessons" class="page">
+
+    <div class="title">
+
+        <h1>My Lessons</h1>
+
+        <p>
+            មេរៀនដែលខ្ញុំកំពុងសិក្សា
+        </p>
+
+    </div>
+
+
+    <div class="lesson-grid">
+        
+        <div class="lesson">
+
+            <div class="icon">
+                <i class="fa-solid fa-file-html"></i>
+            </div>
+
+            <h2>HTML</h2>
+
+            <p>
+                សិក្សាពីការបង្កើត
+                Structure របស់ Website។
+            </p>
+
+        </div>
+
+
+        <div class="lesson">
+
+            <div class="icon"></div>
+
+            <h2>CSS</h2>
+
+            <p>
+                សិក្សាពីការរចនា
+                និង Style Website។
+            </p>
+
+        </div>
+
+
+
+        <div class="lesson">
+
+            <div class="icon"></div>
+
+            <h2>C</h2>
+
+            <p>
+                សិក្សាពី Programming
+                និង Algorithm។
+            </p>
+
+        </div>
+
+
+
+        <div class="lesson">
+
+            <div class="icon"></div>
+
+            <h2>Python</h2>
+
+            <p>
+                សិក្សាពី Programming
+                និង Application Development។
+            </p>
+
+        </div>
+
+        <div class="lesson">
+
+            <div class="icon"></div>
+
+            <h2>Java</h2>
+
+            <p>
+                សិក្សាពី Object-Oriented
+                Programming។
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="projects" class="page">
+
+    <div class="title">
+
+        <h1>My Projects</h1>
+
+        <p>
+            Project សម្រាប់ការលក់ផលិតផល
+        </p>
+
+    </div>
+
+
+    <div class="project-grid">
+
+        <div class="project-card">
+
+            <img
+                src="https://i.pinimg.com/1200x/55/4e/e9/554ee965340bf61fd41296963e053e3d.jpg"
+                alt="Book"
+            >
+
+            <div class="project-content">
+
+                <h2> ការលក់សៀវភៅ</h2>
+
+                <p>
+                    គេហទំព័រសម្រាប់បង្ហាញ
+                    និងលក់សៀវភៅផ្សេងៗ
+                    ដូចជា សៀវភៅ Programming,
+                    English និងសៀវភៅសិក្សា។
+                </p>
+
+                <button class="btn" onclick="showMessage('Book Shop')">
+                  View Project 
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="project-card">
+
+            <img
+                src="https://i.pinimg.com/1200x/fe/f7/b3/fef7b3cbaeb59afc974ab04dd20741e6.jpg"
+                alt="Computer"
+            >
+
+            <div class="project-content">
+
+                <h2> ការលក់ Computer</h2>
+
+                <p>
+                    គេហទំព័រសម្រាប់លក់
+                    Laptop, Desktop, Monitor
+                    និង Accessories សម្រាប់
+                    Computer។
+                </p>
+
+                <button class="btn" onclick="showMessage('Computer Shop')">
+                    View Project
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="project-card">
+
+            <img
+                src="https://i.pinimg.com/1200x/22/ea/a5/22eaa5d41ea82e260f9e7379c1d1b475.jpg"
+                alt="Phone"
+            >
+
+            <div class="project-content">
+
+                <h2> ការលក់ទូរស័ព្ទ</h2>
+
+                <p>
+                    គេហទំព័រសម្រាប់លក់
+                    Smartphone ដូចជា
+                    iPhone, Samsung និង
+                    Android Phones។
+                </p>
+
+                <button class="btn" onclick="showMessage('Phone Shop')">
+                    View Project
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="page">
+
+    <div class="title">
+
+        <h1>Contact </h1>
+
+        <p>
+            ទំនាក់ទំនង
+        </p>
+
+    </div>
+
+
+    <div class="contact-box">
+
+        <input type="text" placeholder="ឈ្មោះ">
+
+        <input type="email" placeholder="Email">
+
+        <textarea placeholder="សរសេរសារ..."></textarea>
+
+        <button class="btn" onclick="sendMessage()">
+            Send Message
+        </button>
+    </div>
+</section>
+<footer>
+    <p>
+        © 2026 Vuthat Bounthan
+    </p>
+</footer>
+<script>
+    function showPage(pageId, button) {
+        const pages = document.querySelectorAll(".page");
+        pages.forEach(function(page) {
+            page.classList.remove("active");
+        });
+        document.getElementById(pageId).classList.add("active");
+        const buttons = document.querySelectorAll(".nav-btn");
+        buttons.forEach(function(btn) {
+            btn.classList.remove("active");
+        });
+        button.classList.add("active");
+    }
+    function showMessage(project) {
+        alert(
+            "អ្នកបានជ្រើសរើស Project: " + project
+        );
+    }
+    function sendMessage() {
+
+        alert(
+            "សាររបស់អ្នកត្រូវបានបញ្ជូន!"
+        );
+    }
+</script>
+</body>
+</html>
